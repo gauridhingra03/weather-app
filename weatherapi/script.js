@@ -50,6 +50,8 @@ function setBackground(condition) {
 
   if (text.includes("sun") || text.includes("clear")) {
     image = "images/sunny.jpg";
+  }else if (text.includes("overcast")) {
+    image = "images/overcast.jpg";
   } else if (text.includes("cloud")) {
     image = "images/cloudy.jpg";
   } else if (text.includes("rain") || text.includes("drizzle")) {
@@ -64,4 +66,5 @@ function setBackground(condition) {
 
   document.body.style.backgroundImage = `url('${image}')`;
 }
+
 
